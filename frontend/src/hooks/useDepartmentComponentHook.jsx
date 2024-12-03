@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import {
   getDepartmentById,
   createDepartment,
-  updateDeparment,
+  updateDepartment,
 } from "../services/DepartmentService";
 
 const useDepartmentComponentHook = () => {
@@ -35,7 +35,7 @@ const useDepartmentComponentHook = () => {
     const department = { departmentName, departmentDescription };
     if (departmentName && departmentDescription) {
       if (id) {
-        await updateDeparment(id, department);
+        await updateDepartment(id, department);
         toast.info("Department updated successfully!");
         navigate("/departments");
         return;

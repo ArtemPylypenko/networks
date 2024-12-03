@@ -14,7 +14,7 @@ export const getDepartmentById = (id) => {
     return axios.get(REST_API_URL + "/" + id);
 };
 
-export const updateDeparment = (id, department) => {
+export const updateDepartment = (id, department) => {
     return axios.put(REST_API_URL + "/" + id, department);
 };
 
