@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = proces.env.VITE_BASE_URL;
-const REST_API_URL = `${BASE_URL}/students`;
+const REST_API_URL = `https://networks-asqx.onrender.com/api/students`;
 
 export const listStudents = () => {
     return axios.get(REST_API_URL);
