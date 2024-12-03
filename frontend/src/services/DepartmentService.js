@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const REST_API_URL = '${import.meta.env.REST_API_URL}/departments';
+const BASE_URL = proces.env.VITE_BASE_URL;
+const REST_API_URL = `${BASE_URL}/departments`;
 
 export const listDepartments = () => {
     return axios.get(REST_API_URL);
